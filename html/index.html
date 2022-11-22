@@ -35,6 +35,8 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesoeet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/registerLogin.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
    </head>
    <body>
       <!-- banner bg main start -->
@@ -56,14 +58,16 @@
                <div class="containt_main">
                   <div id="mySidenav" class="sidenav">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <a href="index.html">Home</a>
-                     <a href="moda.html">Moda</a>
-                     <a href="tecnologia.html">Tecnologia</a>
+                     <a href="index.html">Página Inicial</a>
+                     <a href="animais.html">Animais</a>
+                     <a href="criança.html">Bebé e Criança</a>
+                     <a href="casa.html">Casa</a>
                      <a href="desporto.html">Desporto</a>
-                     <a href="jewellery.html">Casa</a>
-                     <a href="jewellery.html">Animais</a>
-                     <a href="jewellery.html">Serviços</a>
-                     <a href="jewellery.html">Mais Categorias</a>
+                     <a href="lazer.html">Lazer</a>
+                     <a href="moda.html">Moda</a>
+                     <a href="serviços.html">Serviços</a>
+                     <a href="tecnologia.html">Tecnologia</a>
+                     <a href="veiculos.html">Veículos</a>
                   </div>
                   <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
                   <div class="main">
@@ -87,10 +91,57 @@
                               </a>
                            </li>
                            <li>
-                              <a href="#">
-                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                 <span class="padding_10">Conta</span>
-                              </a>
+                                 <input type="checkbox" id="show">
+                                 <label for="show" class="padding_10" >Registar | Iniciar Sessão</label>
+                                 <div class="container2">
+                                    <label for="show" class="close-btn fas fa-times" title="close"></label>
+                                    <div class="wrapper">
+                                       <div class="form-container">
+                                          <div class="slide-controls">
+                                             <input type="radio" name="slide" id="login" checked>
+                                             <input type="radio" name="slide" id="signup">
+                                             <label for="login" class="slide login">Iniciar Sessão</label>
+                                             <label for="signup" class="slide signup">Registar</label>
+                                             <div class="slider-tab"></div>
+                                          </div>
+                                          <div class="form-inner">
+                                             <form action="#" class="login">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="pass-link">
+                                                   <a href="#">Esqueceu a sua password?</a>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="Iniciar sessão!">
+                                                </div>
+                                                <div class="signup-link">
+                                                   Ainda não tem conta? <a href="">Registar!</a>
+                                                </div>
+                                             </form>
+                                             <form action="#" class="signup">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Confirmação da password" required>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="Registar!">
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
                            </li>
                         </ul>
                      </div>
@@ -595,6 +646,25 @@
          function closeNav() {
            document.getElementById("mySidenav").style.width = "0";
          }
+
+         /* Login e Registo  */
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
       </script>
    </body>
 </html>
