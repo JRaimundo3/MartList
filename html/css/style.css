@@ -54,7 +54,7 @@ h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
-    padding: 0 0 200px 0;
+    padding: 0 0 20% 0;
     font-weight: normal;
     line-height: normal;
     color: #111111;
@@ -279,7 +279,7 @@ button {
     width: 100%;
     float: left;
     text-align: center;
-    padding: 30px 450px;
+    padding: 0px 400px;
 }
 
 
@@ -824,7 +824,13 @@ a:hover {
 }
 
 .footer_logo {
+    width: 40%;
+    text-align: center;
+}
+
+.footer_logo_img {
     width: 100%;
+    margin-left: 75%;
     text-align: center;
 }
 

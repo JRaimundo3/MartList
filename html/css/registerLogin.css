@@ -33,6 +33,7 @@ input[type="checkbox"]{
   width: 410px;
   padding: 30px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 25px;
 }
 #show:checked ~ .container2{
   display: block;
