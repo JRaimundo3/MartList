@@ -1,9 +1,10 @@
+
 const productCardTemplate = document.querySelector("[data-product-template]") 
 const productCardContainer = document.querySelector("[data-product-cards-container]") 
 
 
 
-fetch('https://fakestoreapi.com/products')
+fetch('https://fakestoreapi.com/products?limit=0') // Para a pag principal escolher um limite, neste momento está a 0 porque não sei porque quando retornar produtos lixa o menu 
   .then(res => res.json())
   .then(data => {
     data.forEach(product => {
