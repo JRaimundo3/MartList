@@ -10,14 +10,14 @@
    text-transform: capitalize;
 }
 
-html{
+/*html{
    font-size: 62.5%;
    overflow-x: hidden;
 }
 
 body{
    background: #eee;
-}
+}*/
 
 .container{
    max-width: 1200px;

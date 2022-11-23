@@ -37,7 +37,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
       <!-- custom css file link  -->
-      <!--<link rel="stylesheet" href="css/style.css">  TODO: USAR ESTES STYLES DO VIDEO DOS CARDS, CUIDADO QUE LIXAM A SEARCH BAR  -->
+      <link rel="stylesheet" href="css/styleProduct.css"> <!-- TODO: USAR ESTES STYLES DO VIDEO DOS CARDS, CUIDADO QUE LIXAM A SEARCH BAR  -->
       <!-- custom js file link  -->
       <script src="js/scriptProduct.js" defer></script>
 
@@ -95,7 +95,9 @@
                            </li>
                            <li>
                                  <input type="checkbox" id="show">
-                                 <label for="show" class="padding_10" >Registar | Iniciar Sessão</label>
+                                 <a href="#">
+                                 <i class="fa fa-user" aria-hidden="true"></i>
+                                 <label for="show" class="padding_10" >Sign up | Login</label></a>
                                  <div class="container2">
                                     <label for="show" class="close-btn fas fa-times" title="close"></label>
                                     <div class="wrapper">
@@ -103,8 +105,8 @@
                                           <div class="slide-controls">
                                              <input type="radio" name="slide" id="login" checked>
                                              <input type="radio" name="slide" id="signup">
-                                             <label for="login" class="slide login">Iniciar Sessão</label>
-                                             <label for="signup" class="slide signup">Registar</label>
+                                             <label for="login" class="slide login">Login</label>
+                                             <label for="signup" class="slide signup">Sign up</label>
                                              <div class="slider-tab"></div>
                                           </div>
                                           <div class="form-inner">
@@ -116,14 +118,14 @@
                                                    <input type="password" placeholder="Password" required>
                                                 </div>
                                                 <div class="pass-link">
-                                                   <a href="#">Esqueceu a sua password?</a>
+                                                   <a href="#">Forgot password?</a>
                                                 </div>
                                                 <div class="field btn">
                                                    <div class="btn-layer"></div>
-                                                   <input type="submit" value="Iniciar sessão!">
+                                                   <input type="submit" value="LOGIN!">
                                                 </div>
                                                 <div class="signup-link">
-                                                   Ainda não tem conta? <a href="">Registar!</a>
+                                                   Don't have an account? <a href="">Sign up!</a>
                                                 </div>
                                              </form>
                                              <form action="#" class="signup">
@@ -134,11 +136,11 @@
                                                    <input type="password" placeholder="Password" required>
                                                 </div>
                                                 <div class="field">
-                                                   <input type="password" placeholder="Confirmação da password" required>
+                                                   <input type="password" placeholder="Password confirmation" required>
                                                 </div>
                                                 <div class="field btn">
                                                    <div class="btn-layer"></div>
-                                                   <input type="submit" value="Registar!">
+                                                   <input type="submit" value="SIGN UP!">
                                                 </div>
                                              </form>
                                           </div>
@@ -188,15 +190,14 @@
       </div>
       <!-- banner bg main end -->
 
-      <div class="products-container" data-product-cards-container>
+      <!--<div class="products-container" data-product-cards-container>
          <template data-product-template>
             <div class="product" data-name="p-1">
                <img src="" alt="">
                <h3 class="cardTitle" data-header></h3>
                <div class="price" data-body></div>
          </template>
-      </div>
-
+      </div>-->
 
       <!-- fashion section start -->
       <div class="fashion_section">
