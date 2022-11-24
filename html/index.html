@@ -190,15 +190,47 @@
       </div>
       <!-- banner bg main end -->
 
-      <!--<div class="products-container" data-product-cards-container>
+      <div class="products-container" data-product-cards-container>     
          <template data-product-template>
-            <div class="product" data-name="p-1">
+            <div class="product" data-name>
                <img src="" alt="">
-               <h3 class="cardTitle" data-header></h3>
-               <div class="price" data-body></div>
+               <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text" data-header></h4>
+                        <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
+                        <!-- make div with image source as data-img -->
+                        <div class="tshirt_img" onload="changeImg(data-img)"><img id= "imageToChange" src=""></div> 
+                        <div class="img" data-img></div>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Comprar</a></div>
+                           <div class="seemore_bt"><a href="#">Ver mais</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
          </template>
-      </div>-->
+       
+         <!-- Preview of the product -->
+         <!--
+         <div class="products-preview">
+            <div class="preview" data-target=data-name>
+               <i class="fas fa-times"></i>
+               <img src="" alt="">
+               <h3 data-header></h3>
+               <p data-description></p>
+               <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
+               <div class="buttons">
+                  <a href="#" class="buy">Comprar</a>
+                  <a href="#" class="cart">Adicionar</a>
+               </div>
+            </div>
+         </div>
+         -->
+      </div>
 
+      
+      <!--previwes end-->
       <!-- fashion section start -->
       <div class="fashion_section">
          <div id="main_slider" class="carousel slide" data-ride="carousel">
@@ -650,6 +682,11 @@
          function openNav() {
            document.getElementById("mySidenav").style.width = "250px";
          }
+
+         function changeImg(source) {
+            document.getElementById("imageToChange").src = source;
+            
+         }
          
          function closeNav() {
            document.getElementById("mySidenav").style.width = "0";
@@ -674,5 +711,6 @@
            return false;
          });
       </script>
+
    </body>
 </html>
