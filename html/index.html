@@ -200,34 +200,38 @@
                         <h4 class="shirt_text" data-header></h4>
                         <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
                         <!-- make div with image source as data-img -->
-                        <div class="tshirt_img" onload="changeImg(data-img)"><img id= "imageToChange" src=""></div> 
-                        <div class="img" data-img></div>
+                        <img class="img" data-img></img>
                         <div class="btn_main">
                            <div class="buy_bt"><a href="#">Comprar</a></div>
                            <div class="seemore_bt"><a href="#">Ver mais</a></div>
+                        </div>
+                        <div data-name>
+
                         </div>
                      </div>
                   </div>
                </div>
          </template>
-       
-         <!-- Preview of the product -->
-         <!--
-         <div class="products-preview">
-            <div class="preview" data-target=data-name>
-               <i class="fas fa-times"></i>
-               <img src="" alt="">
-               <h3 data-header></h3>
-               <p data-description></p>
-               <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
-               <div class="buttons">
-                  <a href="#" class="buy">Comprar</a>
-                  <a href="#" class="cart">Adicionar</a>
+      </div>
+      <!--
+      <div class="preview" data-product-preview-cards-container>
+         <template data-product-preview-template>
+            <div class="products-preview">
+               <div class="preview" >
+                  <i class="fas fa-times"></i>
+                  <img src="" alt="">
+                  <h3 data-header></h3>
+                  <p data-description></p>
+                  <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
+                  <div class="buttons">
+                     <a href="#" class="buy">oiii</a>
+                     <a href="#" class="cart">oiiii</a>
+                  </div>
                </div>
             </div>
-         </div>
-         -->
+         </template>
       </div>
+-->
 
       
       <!--previwes end-->
@@ -684,7 +688,8 @@
          }
 
          function changeImg(source) {
-            document.getElementById("imageToChange").src = source;
+            var image = document.getElementById("imageToChange");
+            image.src = placeholder.data(source);
             
          }
          
