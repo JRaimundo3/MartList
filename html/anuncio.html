@@ -66,20 +66,19 @@
                   <div id="mySidenav" class="sidenav">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                      <a href="index.html">Página Inicial</a>
-                     <a href="tecnologia.html">Electronics</a>
-                     <a href="joias.html">Jewelery</a>
-                     <a href="modaHomem.html">Men's clothing</a>
-                     <a href="modaMulher.html">Women's clothing</a>
-                     <a>Homes</a>
-                     <a>Services</a>
-                     <a>Sports</a>
-                     <a>Cars</a>
+                     <a href="tecnologia.html">Tecnologia</a>
+                     <a href="desporto.html">Desporto</a>
+                     <a href="moda.html">Moda</a>
+                     <a href="veiculos.html">Veículos</a>
+                     <a>Lazer</a>
+                     <a>Serviços</a>
+                     <a>Animais</a>
                   </div>
                   <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
                   <div class="main">
                      <!-- Another variation with a button -->
                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Pesquisar artigos na loja">
+                        <input type="text" class="form-control" placeholder="Pesquisar artigos na loja" data-search>
                         <div class="input-group-append">
                            <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
                            <i class="fa fa-search"></i>
@@ -91,16 +90,10 @@
                      <div class="login_menu">
                         <ul>
                            <li>
-                              <a href="#">
-                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                 <span class="padding_10">Carrinho</span>
-                              </a>
-                           </li>
-                           <li>
                                  <input type="checkbox" id="show">
                                  <a href="#">
                                  <i class="fa fa-user" aria-hidden="true"></i>
-                                 <label for="show" class="padding_10" >Sign up | Login</label></a>
+                                 <label for="show" class="padding_10" >Registar | Iniciar Sessão</label></a>
                                  <div class="container2">
                                     <label for="show" class="close-btn fas fa-times" title="close"></label>
                                     <div class="wrapper">
@@ -108,8 +101,8 @@
                                           <div class="slide-controls">
                                              <input type="radio" name="slide" id="login" checked>
                                              <input type="radio" name="slide" id="signup">
-                                             <label for="login" class="slide login">Login</label>
-                                             <label for="signup" class="slide signup">Sign up</label>
+                                             <label for="login" class="slide login">Iniciar Sessão</label>
+                                             <label for="signup" class="slide signup">Registar</label>
                                              <div class="slider-tab"></div>
                                           </div>
                                           <div class="form-inner">
@@ -121,14 +114,15 @@
                                                    <input type="password" placeholder="Password" required>
                                                 </div>
                                                 <div class="pass-link">
-                                                   <a href="#">Forgot password?</a>
+                                                   <a href="#">Esqueceu-se da password?</a>
                                                 </div>
                                                 <div class="field btn">
                                                    <div class="btn-layer"></div>
-                                                   <input type="submit" value="LOGIN!">
+                                                   <input type="submit" value="Iniciar Sessão">
                                                 </div>
                                                 <div class="signup-link">
-                                                   Don't have an account? <a href="">Sign up!</a>
+                                                   <p>Não têm uma conta?</p>
+                                                   <a href="">Faço o seu registo!</a>
                                                 </div>
                                              </form>
                                              <form action="#" class="signup">
@@ -139,11 +133,11 @@
                                                    <input type="password" placeholder="Password" required>
                                                 </div>
                                                 <div class="field">
-                                                   <input type="password" placeholder="Password confirmation" required>
+                                                   <input type="password" placeholder="Confirmação da Password" required>
                                                 </div>
                                                 <div class="field btn">
                                                    <div class="btn-layer"></div>
-                                                   <input type="submit" value="SIGN UP!">
+                                                   <input type="submit" value="Registar">
                                                 </div>
                                              </form>
                                           </div>

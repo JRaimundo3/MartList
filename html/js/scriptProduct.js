@@ -1,8 +1,14 @@
 
 const productCardTemplate = document.querySelector("[data-product-template]") 
 const productCardContainer = document.querySelector("[data-product-cards-container]") 
+const searchInput = document.querySelector("[data-search]") 
 
 
+
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value
+  console.log(value)
+})
 
 
 fetch('https://fakestoreapi.com/products?limit=0') // Para a pag principal escolher um limite, neste momento está a 0 porque não sei porque quando retornar produtos lixa o menu 
