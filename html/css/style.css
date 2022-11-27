@@ -15,10 +15,6 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
-* {
-    box-sizing: border-box !important;
-    transition: ease all 0.5s;
-}
 
 html {
     scroll-behavior: smooth;
@@ -85,13 +81,7 @@ h6 {
     font-size: 13px
 }
 
-*,
-*::after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 h1 a,
 h2 a,
@@ -142,6 +132,7 @@ a,
 
 img {
     max-width: 100%;
+    object-fit: cover;
     height: auto;
 }
 
@@ -199,10 +190,7 @@ button {
     width: 100%;
 }
 
-.layout_padding {
-    padding-top: 90px;
-    padding-bottom: 0px;
-}
+
 
 .padding_0 {
     padding: 0px;
@@ -572,12 +560,12 @@ a:hover {
 }
 
 .box_main {
-    width: 100%;
+    width: 359px;
     background-color: #ffffff;
     height: auto;
     padding: 20px;
     box-shadow: 0px 0 30px 10px #f0f0f0;
-    margin-bottom: 20px;
+    margin-bottom: 50%;
 }
 
 .shirt_text {

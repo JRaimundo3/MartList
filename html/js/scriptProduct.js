@@ -13,12 +13,10 @@ fetch('https://fakestoreapi.com/products?limit=0') // Para a pag principal escol
       const header = card.querySelector("[data-header]") //vai buscar ao html o elemento com o data-header
       const body = card.querySelector("[data-body]") 
       const img = card.querySelector("[data-img]")  //vai buscar ao html o elemento com o data-img
-      const id = card.querySelector("[data-name]")
       const description = card.querySelector("[data-description]")
       header.textContent = product.title 
       body.textContent = product.price + "€"
       img.src = product.image;
-      id.textContent = product.id
       //description.textContent = product.description   //dao erro a ir buscar 
       productCardContainer.append(card)   
     });
