@@ -4,18 +4,22 @@ const productCardContainer = document.querySelector("[data-product-cards-contain
 const searchInput = document.querySelector("[data-search]") 
 let xmlhttp = new XMLHttpRequest();
 
-
+let products = []
 
 searchInput.addEventListener("input", (e) => {
-  const value = e.target.value
-  console.log(value)
+  const value = e.target.value.toLowerCase()
+  products.forEach(product => {
+    const isVisible = product.title.toLowerCase().includes(value)
+    console.log(isVisible)
+    product.element.classList.toggle("hide", !isVisible)
+  })
 })
 
 
 fetch('https://fakestoreapi.com/products?limit=0') // Para a pag principal escolher um limite, neste momento está a 0 porque não sei porque quando retornar produtos lixa o menu 
   .then(res => res.json())
   .then(data => {
-    data.forEach(product => {
+    products = data.map(product => {
 
       const card = productCardTemplate.content.cloneNode(true).children[0] 
       const header = card.querySelector("[data-header]") //vai buscar ao html o elemento com o data-header
@@ -28,6 +32,7 @@ fetch('https://fakestoreapi.com/products?limit=0') // Para a pag principal escol
       id.href = "product.html?"+product.id;
       //description.textContent = product.description   //dao erro a ir buscar 
       productCardContainer.append(card)   
+      return {title: product.title, element: card}
     });
 
   })
