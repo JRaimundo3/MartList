@@ -1,0 +1,36 @@
+config:
+  target: 'https://app-ipm-backend.azurewebsites.net/rest'
+  http:
+    timeout: 15
+  plugins:
+    metrics-by-endpoint:
+      useOnlyRequestNames: true
+  processor: "./test-utils.js"
+  variables:
+    numUsers : 8
+  
+  phases:
+  - name: "Test"
+    duration: 1
+    arrivalCount: 1
+
+scenarios:
+  - name: 'Test'
+    weight: 1
+    flow:
+      - loop:                            
+        - post:                          
+            url: "/media/"
+            name: "POST:/media/"
+            headers:
+              Content-Type: application/octet-stream
+              Accept: application/json
+            beforeRequest: "uploadImageBody"
+            capture: 
+              regexp: "(.+)"
+              as: "imageId"              
+        
+          
+
+
+         

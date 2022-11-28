@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>MartList</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/registerLogin.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+      <!-- custom css file link  -->
+      <!--<link rel="stylesheet" href="css/styleProduct.css">--> <!-- TODO: USAR ESTES STYLES DO VIDEO DOS CARDS, CUIDADO QUE LIXAM A SEARCH BAR  -->
+      <!-- custom js file link  -->
+      <script src="js/scriptProduct.js" defer></script>
+      <link rel="stylesheet" type="text/css" href="css/listing.css">
+      <script src="js/listing.js" defer></script>
+
+   </head>
+   <body>
+      <!-- banner bg main start -->
+      <div class="banner_bg_main">
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html">Página Inicial</a>
+                     <a href="tecnologia.html">Electronics</a>
+                     <a href="joias.html">Jewelery</a>
+                     <a href="modaHomem.html">Men's clothing</a>
+                     <a href="modaMulher.html">Women's clothing</a>
+                     <a>Homes</a>
+                     <a>Services</a>
+                     <a>Sports</a>
+                     <a>Cars</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+                  <div class="main">
+                     <!-- Another variation with a button -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Pesquisar artigos na loja">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="login_menu">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                 <span class="padding_10">Carrinho</span>
+                              </a>
+                           </li>
+                           <li>
+                                 <input type="checkbox" id="show">
+                                 <a href="#">
+                                 <i class="fa fa-user" aria-hidden="true"></i>
+                                 <label for="show" class="padding_10" >Sign up | Login</label></a>
+                                 <div class="container2">
+                                    <label for="show" class="close-btn fas fa-times" title="close"></label>
+                                    <div class="wrapper">
+                                       <div class="form-container">
+                                          <div class="slide-controls">
+                                             <input type="radio" name="slide" id="login" checked>
+                                             <input type="radio" name="slide" id="signup">
+                                             <label for="login" class="slide login">Login</label>
+                                             <label for="signup" class="slide signup">Sign up</label>
+                                             <div class="slider-tab"></div>
+                                          </div>
+                                          <div class="form-inner">
+                                             <form action="#" class="login">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="pass-link">
+                                                   <a href="#">Forgot password?</a>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="LOGIN!">
+                                                </div>
+                                                <div class="signup-link">
+                                                   Don't have an account? <a href="">Sign up!</a>
+                                                </div>
+                                             </form>
+                                             <form action="#" class="signup">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password confirmation" required>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="SIGN UP!">
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+         <!-- banner section start -->
+         <!--<div class="banner_section layout_padding">
+            <div class="container">-->
+               <!-- banner section start -->
+         <div class="banner_section2 layout_padding">
+            <div class="container4">
+               <header>Criar um anúncio</header>
+               <div class="progress-bar1">
+                  <div class="step">
+                     <p>
+                        Info
+                     </p>
+                     <div class="bullet">
+                        <span>1</span>
+                     </div>
+                     <div class="check fas fa-check"></div>
+                  </div>
+                  <div class="step">
+                     <p>
+                        Contactos
+                     </p>
+                     <div class="bullet">
+                        <span>2</span>
+                     </div>
+                     <div class="check fas fa-check"></div>
+                  </div>
+                  <div class="step">
+                     <p>
+                        Imagem
+                     </p>
+                     <div class="bullet">
+                        <span>3</span>
+                     </div>
+                     <div class="check fas fa-check"></div>
+                  </div>
+                  <div class="step">
+                     <p>
+                        Rever
+                     </p>
+                     <div class="bullet">
+                        <span>4</span>
+                     </div>
+                     <div class="check fas fa-check"></div>
+                  </div>
+               </div>
+               <div class="form-outer1">
+                  <form action="#">
+                     <div class="page slide-page">
+                        <div class="title1">
+                           Informação importante:
+                        </div>
+                        <div class="field1">
+                           <div class="label1">
+                              Título:
+                           </div>
+                           <input type="text" id="titleId" value="">
+                        </div>
+                        <div class="field3">
+                           <div class="label3">
+                              Descrição:
+                           </div>
+                           <textarea name="text1" cols="40" rows="5" id="descriptionId" value=""></textarea>
+                           <!--<input type="text">-->
+                        </div>
+                        <div class="field2">
+                           <div class="label2">
+                              Categoria:
+                           </div>
+                           <select id="categoryId" value="">
+                              <option>Tecnologia</option>
+                              <option>Moda</option>
+                              <option>Veículos</option>
+                              <option>Serviços</option>
+                           </select>
+                        </div>
+                        <div class="field2">
+                           <div class="label2">
+                              Preço:
+                           </div>
+                           <input type="Number" id="priceId" value="">
+                        </div>
+                        <div class="field4">
+                           <button class="firstNext next">Próximo</button>
+                        </div>
+                     </div>
+                     <div class="page">
+                        <div class="title1">
+                           Informação de contacto:
+                        </div>
+                        <div class="field5">
+                              <div class="label5">
+                                 Email:
+                              </div>
+                              <input type="email" id="emailId" value="">
+                           </div>
+                           <div class="field5">
+                              <div class="label5">
+                                 Número de telefone:
+                              </div>
+                              <input type="Number" id="phoneId" value="">
+                           </div>
+                       
+                        <div class="field4 btns">
+                           <button class="prev-1 prev">Anterior</button>
+                           <button class="next-1 next">Próximo</button>
+                        </div>
+                     </div>
+                     <div class="page">
+                        <div class="container5">
+                           <div class="filesUpload">
+                              <div class="image">
+                                 <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="newImage">
+                              </div>
+                              <div class="content">
+                                 <div class="icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                 </div>
+                                 <div class="text">
+                                    Nenhum ficheiro escolhido!
+                                 </div>
+                              </div>
+                              <div id="cancel-btn">
+                                 <i class="fas fa-times"></i>
+                              </div>
+                              <div class="file-name">
+                                 File name here
+                              </div>
+                           </div>
+                           <button onclick="defaultBtnActive()" id="custom-btn">Escolha um ficheiro</button>
+                           <input id="default-btn" type="file" hidden>
+                        </div>
+                        
+                        <div class="field6 btns">
+                           <button class="prev-2 prev">Anterior</button>
+                           <button class="next-2 next">Próximo</button>
+                        </div>
+                     </div>
+                     <div class="page">
+                        <div class="title1">
+                           Revê o teu anúncio antes de publicar:
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Título:
+                           </div>
+                           <span id="titleId2"></span>
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Descrição:
+                           </div>
+                           <span id="descriptionId2"></span>
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Categoria:
+                           </div>
+                           <span id="categoryId2"></span>
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Preço:
+                           </div>
+                           <span id="priceId2"></span>
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Email:
+                           </div>
+                           <span id="emailId2"></span>
+                        </div>
+                        <div class="field7">
+                           <div class="label7">
+                              Número de telefone:
+                           </div>
+                           <span id="phoneId2"></span>
+                        </div>
+                        <div class="field8">
+                           <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="" id="newImage2">
+                        </div>
+                        <div class="field4 btns">
+                           <button class="prev-3 prev">Anterior</button>
+                           <button class="submit">PUBLICAR</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- banner bg main end -->
+
+      <!--<div class="products-container" data-product-cards-container>     
+         <template data-product-template>
+            <div class="product" data-name>
+               <img src="" alt="">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                     <div class="box_main">
+                        <h4 class="shirt_text" data-header></h4>
+                        <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
+                        <img class="img" data-img></img>
+                        <div class="btn_main">
+                           <div class="buy_bt"><a href="#">Comprar</a></div>
+                           <div class="seemore_bt"><a href="#">Ver mais</a></div>
+                        </div>
+                        <div data-name>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </template>
+      </div>-->
+      
+      
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo">
+               <a href="index.html">
+                  <img src="images/logo.png" class = "footer_logo_img">
+               </a>
+            </div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscreva</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Mais Vendidos</a></li>
+                  <li><a href="#">Novidades</a></li>
+                  <li><a href="#">Promoções</a></li>
+               </ul>
+            </div>
+            <div class="location_main">Contacto:  273 456 937</div>
+         </div>
+      </div>
+      <!-- footer section end -->
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+
+         function changeImg(source) {
+            var image = document.getElementById("imageToChange");
+            image.src = placeholder.data(source);
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+
+         /* Login e Registo  */
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+
+         const nextButtonClick = document.querySelector(".next-2");
+         nextButtonClick.addEventListener('click', function(e) {
+            var titleId2v = document.querySelector("#titleId2").textContent=document.querySelector("#titleId").value;
+            var descriptionId2v = document.querySelector("#descriptionId2").textContent=document.querySelector("#descriptionId").value;
+            var categoryId2v = document.querySelector("#categoryId2").textContent=document.querySelector("#categoryId").value;
+            var priceId2v = document.querySelector("#priceId2").textContent=document.querySelector("#priceId").value;
+            var emailId2v = document.querySelector("#emailId2").textContent=document.querySelector("#emailId").value;
+            var phoneId2v = document.querySelector("#phoneId2").textContent=document.querySelector("#phoneId").value;
+            var newImageId2v = document.querySelector("#newImage2").src=document.querySelector("#newImage").src;
+            
+         });
+
+         //$("#titleId2").load("#titleId");
+         /*var titleIdv = document.querySelector("#titleId");
+         var titleId2v = document.querySelector("#titleId2").textContent=document.querySelector("#titleId").value;
+         titleId2v.textContent = titleIdv.textContent;*/
+      </script>
+
+   </body>
+</html>

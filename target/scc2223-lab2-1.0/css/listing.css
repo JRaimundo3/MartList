@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}*/
+
+::selection{
+  color: #fff;
+}
+
+.banner_section2 {
+  /*width: 81%;
+  float: right;*/
+  padding-bottom: 60px;
+}
+
+.container4{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 1200px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 50px 35px 10px 35px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.container4 header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container4 .form-outer1{
+  width: 100%;
+  overflow: hidden;
+}
+.container4 .form-outer1 form{
+  display: flex;
+  width: 400%;
+}
+.form-outer1 form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer1 form .page .title1{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer1 form .page .field1{
+  width: 800px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field2{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field3{
+  width: 800px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+  margin-bottom: 85px;
+}
+.form-outer1 form .page .field4{
+  width: 800px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field5{
+  width: 500px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field6{
+  width: 550px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field7{
+  width: 500px;
+  height: 25px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer1 form .page .field8{
+  width: 450px;
+  height: 75px;
+  /*margin-top: 100px;
+  margin-left: 550px;
+  display: flex;
+  position: relative;*/
+  position: absolute;
+  left: 50%;
+  top: 70%;
+}
+
+form .page .field1 .label1{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field2 .label2{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field3 .label3{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field5 .label5{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field7 .label7{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+
+
+form .page .field3 textarea{
+  resize:none;
+  height: 200%;
+  width: 200%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field1 input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field2 input{
+  height: 100%;
+  width: 60%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field3 input{
+  height: 200%;
+  width: 200%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field5 input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field1 select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form .page .field2 select{
+  width: 60%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field1 button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #af7012;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field1 button:hover{
+  background: rgb(253, 147, 61);
+}
+form .page .field4 button{
+  position:relative;
+  width:25%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #af7012;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+
+}
+form .page .field4 button:hover{
+  background: rgb(253, 147, 61);
+}
+
+form .page .field6 button{
+  position:relative;
+  width:  46%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #af7012;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+
+}
+form .page .field6 button:hover{
+  background: rgb(253, 147, 61);
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container4 .progress-bar1{
+  display: flex;
+  margin: 25px 0;
+  user-select: none;
+  margin-left: 28%;
+}
+.container4 .progress-bar1 .step{
+  text-align: center;
+  width: 15%;                 
+  position: relative;
+}
+.container4 .progress-bar1 .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar1 .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar1 .step .bullet.active{
+  border-color: #cfb287;
+  background: #af7012;
+}
+.progress-bar1 .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar1 .step .bullet.active span{
+  display: none;
+}
+.progress-bar1 .step .bullet:before,
+.progress-bar1 .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -90px;
+  height: 3px;
+  width: 80px;          /*comprimento da reta*/
+  background: #262626;
+}
+.progress-bar1 .step .bullet.active:after{
+  background: #af7012;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar1 .step:last-child .bullet:before,
+.progress-bar1 .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar1 .step p.active{
+  color: #af7012;
+  transition: 0.2s linear;
+}
+.progress-bar1 .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar1 .step .check.active{
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+}
+
+form .page .field8 img{
+  position: absolute;
+  height: 500%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/*   Files   */
+.container5{
+  height: 420px;
+  width: 430px;
+  position: relative;
+}
+.container5 .filesUpload{
+  position: relative;
+  height: 350px;
+  width: 120%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.filesUpload.active{
+  border: none;
+}
+.filesUpload .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filesUpload img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.filesUpload .icon{
+  font-size: 100px;
+  color: #bd9937;
+}
+.filesUpload .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #79611f;
+}
+.filesUpload #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #a36e1f;
+  cursor: pointer;
+  display: none;
+}
+.filesUpload.active:hover #cancel-btn i{
+  display: block;
+}
+.filesUpload #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.filesUpload .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(135deg,#af7012 0%,#9c6e19 100%);
+}
+.filesUpload.active:hover .file-name{
+  display: block;
+}
+.container5 #custom-btn{
+  margin-top: 20px;
+  display: block;
+  width: 120%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg,#af7012 0%,#9c6e19 100%);
+}
