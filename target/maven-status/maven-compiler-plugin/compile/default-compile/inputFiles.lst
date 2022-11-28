@@ -1,0 +1,17 @@
+C:\Users\joao4\IPM\MartList\MartList\src\srv\impl\MainApplication.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\data\products\Product.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\layers\BlobStorageLayer.java
+C:\Users\joao4\IPM\MartList\MartList\src\utils\AzureKeys.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\authentication\Session.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\data\user\User.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\authentication\Login.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\ProductsResource.java
+C:\Users\joao4\IPM\MartList\MartList\src\utils\Hash.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\authentication\AuthenticationResource.java
+C:\Users\joao4\IPM\MartList\MartList\src\utils\AzureProperties.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\authentication\LoginDAO.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\UserResource.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\data\products\ProductDAO.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\layers\CosmosDBLayer.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\api\service\rest\MediaResource.java
+C:\Users\joao4\IPM\MartList\MartList\src\srv\data\user\UserDAO.java
