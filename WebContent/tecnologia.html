@@ -33,6 +33,8 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesoeet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/registerLogin.css">
+
    </head>
    <body>
       <!-- banner bg main start -->
@@ -55,21 +57,19 @@
                   <div id="mySidenav" class="sidenav">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                      <a href="index.html">Página Inicial</a>
-                     <a href="animais.html">Animais</a>
-                     <a href="criança.html">Bebé e Criança</a>
-                     <a href="casa.html">Casa</a>
-                     <a href="desporto.html">Desporto</a>
-                     <a href="lazer.html">Lazer</a>
-                     <a href="moda.html">Moda</a>
-                     <a href="serviços.html">Serviços</a>
                      <a href="tecnologia.html">Tecnologia</a>
+                     <a href="desporto.html">Desporto</a>
+                     <a href="moda.html">Moda</a>
                      <a href="veiculos.html">Veículos</a>
+                     <a>Lazer</a>
+                     <a>Serviços</a>
+                     <a>Animais</a>
                   </div>
                   <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
                   <div class="main">
                      <!-- Another variation with a button -->
                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Pesquisar artigos na loja">
+                        <input type="text" class="form-control" placeholder="Pesquisar artigos na loja" data-search>
                         <div class="input-group-append">
                            <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
                            <i class="fa fa-search"></i>
@@ -81,16 +81,60 @@
                      <div class="login_menu">
                         <ul>
                            <li>
-                              <a href="#">
-                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                 <span class="padding_10">Carrinho</span>
-                              </a>
-                           </li>
-                           <li>
-                              <a href="#">
+                                 <input type="checkbox" id="show">
+                                 <a href="#">
                                  <i class="fa fa-user" aria-hidden="true"></i>
-                                 <span class="padding_10">Conta</span>
-                              </a>
+                                 <label for="show" class="padding_10" >Registar | Iniciar Sessão</label></a>
+                                 <div class="container2">
+                                    <label for="show" class="close-btn fas fa-times" title="close"></label>
+                                    <div class="wrapper">
+                                       <div class="form-container">
+                                          <div class="slide-controls">
+                                             <input type="radio" name="slide" id="login" checked>
+                                             <input type="radio" name="slide" id="signup">
+                                             <label for="login" class="slide login">Iniciar Sessão</label>
+                                             <label for="signup" class="slide signup">Registar</label>
+                                             <div class="slider-tab"></div>
+                                          </div>
+                                          <div class="form-inner">
+                                             <form action="#" class="login">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="pass-link">
+                                                   <a href="#">Esqueceu-se da password?</a>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="Iniciar Sessão">
+                                                </div>
+                                                <div class="signup-link">
+                                                   <p>Não têm uma conta?</p>
+                                                   <a href="">Faço o seu registo!</a>
+                                                </div>
+                                             </form>
+                                             <form action="#" class="signup">
+                                                <div class="field">
+                                                   <input type="text" placeholder="Email" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Password" required>
+                                                </div>
+                                                <div class="field">
+                                                   <input type="password" placeholder="Confirmação da Password" required>
+                                                </div>
+                                                <div class="field btn">
+                                                   <div class="btn-layer"></div>
+                                                   <input type="submit" value="Registar">
+                                                </div>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
                            </li>
                         </ul>
                      </div>
