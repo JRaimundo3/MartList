@@ -186,12 +186,13 @@
       
       <div class="products-container" data-product-cards-container>     
          <template data-product-template>
-            <div class="product">
+            <div class="product" style = "max-height: 500px; margin-top: 5%; margin-bottom: 15%;">
                <div class="box_main">
                   <h4 class="shirt_text" data-header></h4>
                   <p class="price_text">Preço <span style="color: #262626;" data-body></span></p>
                   <!-- make div with image source as data-img -->
-                  <img class="img" data-img ></img>
+                  <img style=" display: flex; display:inline-block; 
+                  object-fit: cover;" data-img ></img>
                   <div class="btn_main">
                      <div class="buy_bt"><a href="#">Comprar</a></div>
                      <div class="seemore_bt"><a data-id>Ver mais</a></div>
